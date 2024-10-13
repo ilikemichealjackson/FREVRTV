@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Tutorial Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+        }
+
+        .glow-text {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 35px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 75px #0ff;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+            }
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .image-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-text img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .cool-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cool-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+        }
+
+        .neon-box {
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow-text">Tutorial&nbsp;&nbsp;</h1>
+
+        <div class="section">
+          <h2>Welcome to My Tutorial</h2>
+            <p>This tutorial will guide you through some awesome features and answer your questions.</p>
+        </div>
+
+        <div class="section neon-box">
+            <h2>Our Website Features!<br>
+            </h2>
+            <p>Our website (in developpment) has so many crazy features! Check it out!</p>
+            <ul>
+              <li>Free shows (for the tutorial, scroll down)&nbsp;&nbsp;</li>
+                <li>Cool neon text and buttons</li>
+                <li>Glowing buttons</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How to Watch Any Show on This Site&nbsp;</h2>
+            <div class="image-text">
+                <img src="tutorial1.png" alt="Step 1" width="279" height="234">
+                <div>
+                    <h3>Part 1</h3>
+                    <p>Find your show on imdb, and copy the numbers that start with "tt" in the url bar&nbsp;</p>
+                </div>
+            </div>
+            <div class="image-text">
+                <img src="part2.png" alt="Step 2" width="179" height="100">
+                <div>
+                    <h3>Part 2</h3>
+                    <p>Paste the numbers into the box, type in the season and episode, and now you are done! just wait a few seconds after pressing the update button.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <button class="faq-question">It says the media is not availiable!</button>
+                <div class="faq-answer">
+                    <p>Check if the imdb code (the one mentioned in step 1) is fully correct, just the code, no spaces or /. If it is all correct, the website is bugged, we dont have that show, or it hasnt come out yet!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I create my own cool website just like this??</button>
+                <div class="faq-answer">
+                    <p>You can create your website like this by following the steps at https://docs.google.com/document/d/1hQkPHkGeOH49wxrnwcQxgkHxkQPHudTnPYLf6yRom6A/edit?usp=sharing. its very easy!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Nice! Now how do i make my website unique?</button>
+                <div class="faq-answer">
+                    <p>edit the files on github to your liking (style.css makes the colors glow ect look different) (index can change the title)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
