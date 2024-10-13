@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const season = seasonInput.value || '[THIS IS THE VARIABLE]';
         const episode = episodeInput.value || '[THIS IS THE VARIABLE]';
 
-        const baseUrl = `https://vidsrc.me/embed/tv?imdb=${imdb}&season=${season}&episode=${episode}`;
+        const baseUrl = `https://vidsrc.net/embed/tv?imdb=${imdb}&season=${season}&episode=${episode}`;
         previewText.textContent = 'Current embed: ' + baseUrl;
     }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const season = seasonInput.value || '[THIS IS THE VARIABLE]';
         const episode = episodeInput.value || '[THIS IS THE VARIABLE]';
 
-        const fullUrl = `https://vidsrc.me/embed/tv?imdb=${imdb}&season=${season}&episode=${episode}`;
+        const fullUrl = `https://vidsrc.net/embed/tv?imdb=${imdb}&season=${season}&episode=${episode}`;
         iframe.src = fullUrl;
     }
 
